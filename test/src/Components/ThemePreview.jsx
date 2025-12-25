@@ -62,8 +62,8 @@ const ThemePreview = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full" />
                                 <input type="text" placeholder="Primary input" className="input input-bordered input-primary w-full" />
-                                <select className="select select-bordered w-full">
-                                    <option disabled selected>Pick a color</option>
+                                <select className="select select-bordered w-full" defaultValue="Pick a color">
+                                    <option disabled>Pick a color</option>
                                     <option>Red</option>
                                     <option>Blue</option>
                                 </select>
