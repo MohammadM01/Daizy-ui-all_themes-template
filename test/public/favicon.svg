@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="soothing-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#22d3ee;stop-opacity:1" /> <!-- Cyan-400 -->
+<stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" /> <!-- Blue-500 -->
+</linearGradient>
+<filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+<feGaussianBlur stdDeviation="20" result="blur" />
+<feComposite in="SourceGraphic" in2="blur" operator="over" />
+</filter>
+</defs>
+
+<!-- Main Organic Shape: Abstract Droplet/Wave -->
+<g filter="url(#soft-glow)">
+<circle cx="256" cy="256" r="192" fill="url(#soothing-grad)" fill-opacity="0.1" />
+<path d="M256 64
+C 362 64, 448 150, 448 256
+C 448 362, 362 448, 256 448
+C 150 448, 64 362, 64 256
+C 64 150, 150 64, 256 64 Z" 
+stroke="url(#soothing-grad)" stroke-width="12" stroke-opacity="0.3"/>
+
+<!-- Inner Fluid "D" Shape -->
+<path d="M176 144
+C 176 144, 336 144, 336 256
+C 336 368, 176 368, 176 368
+L 176 144 Z" 
+fill="url(#soothing-grad)" />
+
+<!-- Accent dot -->
+<circle cx="210" cy="220" r="16" fill="white" fill-opacity="0.4" />
+</g>
+</svg>
